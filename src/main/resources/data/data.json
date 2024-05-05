@@ -1,0 +1,177 @@
+[
+  {
+    "id": 1,
+    "type": "Standard Room",
+    "hotelName": "Coastal Inn",
+    "rating": 3.8,
+    "ratingAmount": 85,
+    "pricePerNight": 120,
+    "amenities": [
+      "Free WiFi",
+      "TV",
+      "Air Conditioning",
+      "Ensuite Bathroom"
+    ],
+    "photos": [
+      "https://example.com/room1_photo1.jpg",
+      "https://example.com/room1_photo2.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "type": "Ocean View Suite",
+    "hotelName": "Seaside Resort",
+    "rating": 4.2,
+    "ratingAmount": 110,
+    "pricePerNight": 280,
+    "amenities": [
+      "Free WiFi",
+      "Ocean View Balcony",
+      "King Size Bed",
+      "Mini Bar"
+    ],
+    "photos": [
+      "https://example.com/room2_photo1.jpg",
+      "https://example.com/room2_photo2.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "type": "Luxury Penthouse",
+    "hotelName": "Skyline Hotel",
+    "rating": 4.9,
+    "ratingAmount": 200,
+    "pricePerNight": 800,
+    "amenities": [
+      "Panoramic Views",
+      "Private Terrace",
+      "Jacuzzi",
+      "Butler Service"
+    ],
+    "photos": [
+      "https://example.com/room3_photo1.jpg",
+      "https://example.com/room3_photo2.jpg"
+    ]
+  },
+  {
+    "id": 4,
+    "type": "Family Suite",
+    "hotelName": "Mountain Lodge",
+    "rating": 4.0,
+    "ratingAmount": 95,
+    "pricePerNight": 350,
+    "amenities": [
+      "Free Breakfast",
+      "Sofa Bed",
+      "Mountain View",
+      "Fireplace"
+    ],
+    "photos": [
+      "https://example.com/room4_photo1.jpg",
+      "https://example.com/room4_photo2.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "type": "Executive Room",
+    "hotelName": "City Center Hotel",
+    "rating": 4.5,
+    "ratingAmount": 150,
+    "pricePerNight": 200,
+    "amenities": [
+      "Work Desk",
+      "City View",
+      "Gym Access",
+      "Coffee Maker"
+    ],
+    "photos": [
+      "https://example.com/room5_photo1.jpg",
+      "https://example.com/room5_photo2.jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "type": "Garden View Cottage",
+    "hotelName": "Rural Retreat",
+    "rating": 4.1,
+    "ratingAmount": 80,
+    "pricePerNight": 180,
+    "amenities": [
+      "Private Garden",
+      "Outdoor Seating",
+      "BBQ Grill"
+    ],
+    "photos": [
+      "https://example.com/room6_photo1.jpg",
+      "https://example.com/room6_photo2.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "type": "Business Suite",
+    "hotelName": "Downtown Plaza Hotel",
+    "rating": 4.3,
+    "ratingAmount": 120,
+    "pricePerNight": 320,
+    "amenities": [
+      "Meeting Room",
+      "Executive Lounge",
+      "Free Parking"
+    ],
+    "photos": [
+      "https://example.com/room7_photo1.jpg",
+      "https://example.com/room7_photo2.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "type": "Beachfront Villa",
+    "hotelName": "Tropical Paradise Resort",
+    "rating": 4.7,
+    "ratingAmount": 180,
+    "pricePerNight": 600,
+    "amenities": [
+      "Private Beach Access",
+      "Infinity Pool",
+      "Outdoor Dining"
+    ],
+    "photos": [
+      "https://example.com/room8_photo1.jpg",
+      "https://example.com/room8_photo2.jpg"
+    ]
+  },
+  {
+    "id": 9,
+    "type": "Cozy Cabin",
+    "hotelName": "Forest Hideaway Lodge",
+    "rating": 4.0,
+    "ratingAmount": 100,
+    "pricePerNight": 150,
+    "amenities": [
+      "Wood Fireplace",
+      "Forest View",
+      "Hiking Trails Nearby"
+    ],
+    "photos": [
+      "https://example.com/room9_photo1.jpg",
+      "https://example.com/room9_photo2.jpg"
+    ]
+  },
+  {
+    "id": 10,
+    "type": "Ski Chalet",
+    "hotelName": "Snowy Peaks Resort",
+    "rating": 4.6,
+    "ratingAmount": 160,
+    "pricePerNight": 400,
+    "amenities": [
+      "Ski-in/Ski-out",
+      "Hot Tub",
+      "Mountain Views"
+    ],
+    "photos": [
+      "https://example.com/room10_photo1.jpg",
+      "https://example.com/room10_photo2.jpg"
+    ]
+  }
+]
