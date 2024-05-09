@@ -24,6 +24,11 @@ public class HotelController {
             @RequestParam("room_number") String room_number,
             @RequestParam("adults_number") String adults_number
     ) {
-        return hotelService.getHotels(dest_id);
+        return hotelService.getHotels(
+                dest_id,
+                checkin_date,
+                checkout_date,
+                room_number,
+                adults_number);
     }
 }
