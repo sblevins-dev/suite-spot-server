@@ -1,13 +1,13 @@
 package dev.stephenblevins.suitespotserver.booking.hotels;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/v1/hotels")
@@ -17,7 +17,7 @@ public class HotelController {
     private HotelService hotelService;
 
     @GetMapping("/search")
-    public Optional<List<Hotel>> search(
+    public ResponseEntity<List<Hotel>> search(
             @RequestParam("dest_id") String dest_id,
             @RequestParam("checkin_date") String checkin_date,
             @RequestParam("checkout_date") String checkout_date,

@@ -14,6 +14,29 @@ public class Hotel {
     private float min_total_price;
     private String max_photo_url;
 
+    public Hotel() {
+
+    }
+
+    public Hotel(float review_score, String review_score_word,
+                 String accommodation_type_name, String zip, String address,
+                 String city, String main_photo_url, String url, String hotel_name,
+                 String unity_configuration_label, float min_total_price,
+                 String max_photo_url) {
+        this.review_score = review_score;
+        this.review_score_word = review_score_word;
+        this.accommodation_type_name = accommodation_type_name;
+        this.zip = zip;
+        this.address = address;
+        this.city = city;
+        this.main_photo_url = main_photo_url;
+        this.url = url;
+        this.hotel_name = hotel_name;
+        this.unity_configuration_label = unity_configuration_label;
+        this.min_total_price = min_total_price;
+        this.max_photo_url = max_photo_url;
+    }
+
     public float getReview_score() {
         return review_score;
     }
