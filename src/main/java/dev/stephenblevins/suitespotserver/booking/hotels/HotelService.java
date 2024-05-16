@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.github.cdimascio.dotenv.Dotenv;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,17 +19,22 @@ import java.util.Optional;
 @Service
 public class HotelService {
 
-    private final Dotenv dotenv;
+//    private final Dotenv dotenv;
 
     private final String apiKey;
     private final String apiHost;
     private final RestTemplate restTemplate;
 
-    public HotelService(RestTemplate restTemplate) {
-        dotenv = Dotenv.configure().load();
-
-        this.apiKey = dotenv.get("API_KEY");
-        apiHost = dotenv.get("API_HOST");
+    public HotelService(RestTemplate restTemplate,
+                        @Value("${API_KEY}") String apiKey,
+                        @Value("${API_HOST}") String apiHost
+                        ) {
+//        dotenv = Dotenv.configure().load();
+//
+//        this.apiKey = dotenv.get("API_KEY");
+//        apiHost = dotenv.get("API_HOST");
+        this.apiKey = apiKey;
+        this.apiHost = apiHost;
 
         this.restTemplate = restTemplate;
     }

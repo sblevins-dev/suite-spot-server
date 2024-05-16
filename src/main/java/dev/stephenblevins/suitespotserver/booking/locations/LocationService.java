@@ -1,6 +1,7 @@
 package dev.stephenblevins.suitespotserver.booking.locations;
 
 import io.github.cdimascio.dotenv.Dotenv;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpServerErrorException;
@@ -13,17 +14,23 @@ import java.util.stream.Stream;
 
 @Service
 public class LocationService {
-    private final Dotenv dotenv;
+//    private final Dotenv dotenv;
 
     private final String apiKey;
     private final String apiHost;
     private final RestTemplate restTemplate;
 
-    public LocationService(RestTemplate restTemplate) {
-        dotenv = Dotenv.configure().load();
+    public LocationService(RestTemplate restTemplate,
+                           @Value("${API_KEY}") String apiKey,
+                           @Value("${API_HOST}") String apiHost
+    ) {
+//        dotenv = Dotenv.configure().load();
+//
+//        apiKey = dotenv.get("API_KEY");
+//        apiHost = dotenv.get("API_HOST");
 
-        apiKey = dotenv.get("API_KEY");
-        apiHost = dotenv.get("API_HOST");
+        this.apiKey = apiKey;
+        this.apiHost = apiHost;
 
         this.restTemplate = restTemplate;
     }
